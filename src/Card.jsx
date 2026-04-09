@@ -41,11 +41,12 @@ const statusBadge = (status) => {
 const Card = ({ data, onClick }) => {
   return (
     <>
+      // for tick ets list
       {data.map((ticket) => (
         <div
           key={ticket.id}
           onClick={() => onClick(ticket)}
-          className="bg-white border border-gray-200 rounded-lg p-4 cursor-pointer hover:shadow-md transition-shadow"
+          className="bg-white border border-gray-300 rounded-lg p-4 cursor-pointer hover:shadow-md transition-shadow"
         >
           <div className="flex justify-between items-start mb-2">
             <h2 className="font-semibold text-sm text-gray-900 leading-snug pr-2">{ticket.subject}</h2>
